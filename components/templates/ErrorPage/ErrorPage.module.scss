@@ -1,0 +1,13 @@
+.wrapper {
+    @apply h-full flex justify-center items-center flex-col text-navy;
+
+    height: calc(100vh - (4rem + 300px));
+
+    span {
+        @apply text-9xl
+    }
+
+    p {
+
+    }
+}

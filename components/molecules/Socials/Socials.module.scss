@@ -1,0 +1,11 @@
+.title {
+    @apply text-lg mb-5 hidden md:block;
+}
+
+.box {
+    @apply px-4 flex items-center flex-row sm:flex-col md:flex-row sm:px-0 gap-3;
+}
+
+.item {
+    @apply border border-white/20 rounded-md w-10 h-10 flex items-center justify-center;
+}

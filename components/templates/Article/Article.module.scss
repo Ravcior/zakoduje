@@ -1,0 +1,140 @@
+.thumbnail {
+    @apply rounded-t-xl overflow-hidden;
+
+    img {
+        @apply w-full
+    }
+}
+
+.contentWrapper, .comments, .author {
+    @apply bg-white rounded-xl p-6 lg:p-16 mb-10 text-navy
+}
+
+.contentWrapper {
+    @apply rounded-t-none font-light;
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold mb-7
+    }
+
+    h1 {
+        @apply text-2xl
+    }
+
+    h2 {
+        @apply text-xl
+    }
+
+    h3 {
+        @apply text-lg
+    }
+
+    p, ol, ul, blockquote, pre, hr {
+        @apply mb-7
+    }
+
+    ul, ol {
+        @apply list-disc;
+
+        li {
+            @apply mb-3
+        }
+
+        p {
+            @apply mb-0 
+        }
+
+        ul, ol {
+            @apply pl-5 mt-3 ml-0 mb-0;
+        }
+    }
+
+    ul {
+        @apply list-disc ml-5
+    }
+
+    ol {
+        @apply list-decimal ml-6
+    }
+
+    a {
+        @apply text-primary
+    }
+
+    blockquote {
+        @apply pl-6 py-2 border-l-4 border-primary italic font-medium text-lg;
+
+        blockquote, p {
+            @apply mb-0
+        }
+    }
+
+    code {
+        @apply rounded-lg py-1 px-2 bg-background mr-1.5;
+
+        white-space: break-spaces;
+    }
+
+    pre {
+        @apply overflow-scroll rounded-lg p-3 text-xs sm:text-base bg-background;
+
+        code {
+            @apply rounded-none p-0 bg-transparent
+        }
+    }
+}
+
+.comments {
+    @apply mb-0 text-center
+}
+
+.author {
+    @apply flex items-center text-center gap-8 flex-col xl:text-left xl:flex-row
+}
+
+.authorAvatar {
+    @apply rounded-xl overflow-hidden shrink-0;
+}
+
+.authorName {
+    @apply mb-2 text-xl
+}
+
+.authorText {
+    @apply font-light
+}
+
+@media (min-width: 2048px) {
+    .contentWrapper, .author {
+        @apply float-left;
+
+        width: calc(50% - 16px);
+    }
+
+    .thumbnail, .comments {
+        @apply float-right;
+
+        width: calc(50% - 16px);
+
+    }
+
+    .author {
+        @apply mb-8
+    }
+
+    .comments {
+        @apply sticky top-8
+    }
+
+    .thumbnail {
+        @apply rounded-b-xl mb-8
+    }
+
+    .contentWrapper {
+        @apply rounded-t-xl mr-8
+    }
+
+    .clear {
+        @apply clear-both
+    }
+}

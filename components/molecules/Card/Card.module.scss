@@ -1,0 +1,59 @@
+.wrapper {
+    @apply rounded-xl overflow-hidden bg-white;
+}
+
+.title {
+    @apply p-7 text-lg leading-snug tracking-normal;
+}
+
+.image {
+    img {
+        width: 100%;
+    }
+}
+
+.card {
+    @apply flex gap-5 items-center;
+
+    h4 {
+        @apply text-sm;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+.cardThumbnail {
+    @apply rounded-lg overflow-hidden shrink-0
+}
+
+.roundedCard {
+    @apply flex gap-6 mb-5 last:mb-0;
+
+
+    h5 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+
+    .cardTitle {
+        @apply text-sm mb-1;
+    }
+    
+    .date {
+        @apply px-1 font-light text-[13px] border border-navy/10 rounded-sm;
+    }
+    
+    .image {
+        @apply w-20 h-20 rounded-full overflow-hidden shrink-0;
+    }
+
+    .content {
+        @apply flex justify-center items-start flex-col;
+    }    
+}

@@ -1,0 +1,25 @@
+.wrapper {
+    @apply h-96 sm:h-auto mb-8 block bg-primary rounded-xl overflow-hidden relative;
+
+    img {
+        @apply object-cover h-full sm:w-full
+    }
+}
+
+.mask {
+    @apply absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-transparent to-black
+}
+
+.content {
+    @apply z-10 pb-7 px-7 lg:pb-14 lg:px-14 text-white absolute bottom-0 left-0;
+}
+
+.tag {
+    @apply px-4 py-2 border font-light rounded-lg text-sm mb-2 lg:mb-6 inline-block;
+}
+
+.title {
+    @apply text-xl lg:text-2xl;
+
+    max-width: 580px;
+}

@@ -1,0 +1,21 @@
+.input {
+    @apply w-full bg-transparent border border-navy/20 p-2.5 
+    rounded-lg font-primary 
+    text-navy
+    placeholder:text-navy 
+    focus:outline-0
+    leading-none
+    tracking-widest
+}
+
+.poweredBy {
+    @apply absolute right-2 top-1;
+
+    span {
+        @apply text-xs
+    }
+
+    svg {
+        @apply h-4 w-auto
+    }
+}

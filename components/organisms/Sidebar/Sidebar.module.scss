@@ -1,0 +1,40 @@
+.wrapper {
+    @apply  xl:hidden 2xl:block;
+}
+
+.widget {
+    @apply mb-12 text-navy;
+}
+
+.title {
+    @apply block mb-4 text-xl text-navy;
+}
+
+.categories {
+    @apply flex flex-col items-start;
+
+    li {
+        @apply mb-4 text-sm last:mb-0 flex gap-3 items-center cursor-pointer;
+    }
+}
+
+.bullet {
+    @apply w-3 h-3 bg-primary rounded flex items-center justify-center 
+    before:content-[""] before:block before:w-1 before:h-1 before:bg-background;
+}
+
+.tags {
+    @apply flex flex-wrap gap-3;
+
+    div {
+        @apply py-2 px-4 bg-navy/5 rounded-lg text-[13px] cursor-pointer;
+    }
+}
+
+.socials {
+    @apply flex gap-3;
+
+    a {
+        @apply border border-navy rounded-lg w-10 h-10 flex justify-center items-center;
+    }
+}

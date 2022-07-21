@@ -1,0 +1,39 @@
+.wrapper {
+    @apply bg-white pr-6 pt-6 sm:pr-12 sm:pt-12 rounded-xl overflow-hidden font-alternate font-light text-navy col-span-full;
+}
+
+.widgets {
+    @apply ml-6 pb-6 sm:ml-12 sm:pb-12 grid lg:grid-cols-2 xl:grid-cols-3 gap-y-12 gap-x-24;
+}
+
+.widget {
+    @apply first:col-span-full xl:first:col-auto
+}
+
+.widgetTitle {
+    @apply text-2xl mb-7 block;
+}
+
+.about {
+    @apply tracking-wider;
+}
+
+.tagsBox {
+    @apply flex flex-wrap gap-3;
+
+    div {
+        @apply border border-black/10 py-2 px-3 rounded-xl text-sm cursor-pointer;
+    }
+}
+
+.bottombar {
+    @apply bg-primary h-20 rounded-tr-xl flex justify-between items-center;
+}
+
+.copyright {
+    @apply ml-10 text-lg text-primary text-white;
+}
+
+.cardsWrapper {
+    @apply flex flex-col gap-10
+}

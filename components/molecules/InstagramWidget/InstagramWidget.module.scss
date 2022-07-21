@@ -1,0 +1,15 @@
+.wrapper {
+    @apply mb-10;
+}
+
+.title {
+    @apply font-secondary block mb-5 text-lg;
+}
+
+.box {
+    @apply grid grid-cols-4 gap-5;
+}
+
+.item {
+    @apply rounded-lg overflow-hidden;
+}

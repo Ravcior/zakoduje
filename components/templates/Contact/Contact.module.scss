@@ -1,0 +1,72 @@
+.main {
+    @apply mb-8 text-navy
+}
+
+.formSection {
+    @apply bg-white rounded-xl col-start-1 col-end-3 p-6 lg:p-12;
+
+    form {
+        @apply grid sm:grid-cols-2 gap-6 font-light text-sm;
+
+        input {
+            @apply border border-navy/10 rounded-lg px-5 py-4;
+        }
+
+        textarea {
+            @apply sm:row-start-1 sm:row-end-3 sm:col-start-2 sm:col-end-3 border border-navy/10 rounded-lg py-4 px-6 resize-none;
+
+            min-height: 100px;
+        }
+
+        button > * {
+            @apply w-full
+        }
+        
+        div {
+            @apply font-medium uppercase text-center
+        }
+    }
+}
+
+// .captcha {
+//     @apply sm:col-start-2 flex justify-end;
+
+//     max-width: calc(100vw - 5rem);
+
+//     & > * {
+//         @apply origin-top-right scale-75 sm:scale-100;
+//     }
+// }
+
+.title {
+    @apply text-2xl font-medium mb-5
+}
+
+.text {
+    @apply font-light
+}
+
+.content {
+    @apply mb-14
+}
+
+.image {
+    @apply rounded-xl bg-primary text-white p-12 flex justify-center items-center
+}
+
+.panels {
+    @apply grid sm:grid-cols-6 xl:grid-cols-3 gap-8
+}
+
+.panel {
+    @apply bg-white rounded-xl px-12 py-16 flex justify-center items-center flex-col 
+    sm:col-span-3 xl:col-auto first:col-span-full first:xl:col-auto;
+
+    span {
+        @apply font-light text-sm text-navy
+    }
+}
+
+.icon {
+    @apply rounded-full w-10 h-10 border border-navy/10 mb-4 flex items-center justify-center text-navy
+}

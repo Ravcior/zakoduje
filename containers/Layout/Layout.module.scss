@@ -1,0 +1,32 @@
+.pageWrapper {
+    @apply sm:grid grid-cols-[50px_auto] md:grid-cols-[300px_auto] lg:grid-cols-[400px_auto];
+
+    @media (min-width: 640px) {
+        grid-template-columns: 50px calc(100vw - 50px);
+    }
+    
+    @media (min-width: 768px) {
+        grid-template-columns: 300px calc(100vw - 300px);
+        
+    }
+    
+    @media (min-width: 1024px) {
+        grid-template-columns: 400px calc(100vw - 400px);
+        
+    }
+}
+
+.contentWrapper {
+    @apply p-4 lg:p-8 2xl:grid gap-8 2xl:grid-cols-[auto_330px];
+
+    @media (min-width: 1536px) {
+        grid-template-columns: calc(100vw - 400px - 330px - 6rem) 330px;
+        
+    }
+}
+
+.main {
+    @apply mb-8;
+
+    min-height: calc(100vh - (4rem + 300px));
+}

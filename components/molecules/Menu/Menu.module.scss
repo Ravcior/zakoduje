@@ -1,0 +1,11 @@
+.wrapper {
+    @apply flex flex-row flex-wrap px-4 sm:px-0 sm:flex-col items-center gap-4 py-8 md:px-10 md:block md:border-y border-y-white/10 text-lg font-secondary leading-9 md:mb-10;
+}
+
+.icon {
+    @apply block rounded-lg flex justify-center items-center w-10 h-10 border border-white/10 md:hidden
+}
+
+.title {
+    @apply select-none text-[8px] leading-[14px] text-center block md:text-lg md:text-left md:leading-loose
+}

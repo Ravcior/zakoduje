@@ -1,0 +1,11 @@
+.wrapper {
+    @apply fixed bottom-1/2 right-1/2 z-50 translate-x-1/2 translate-y-1/2 w-full p-4 md:max-w-screen-md lg:max-w-screen-lg lg:px-8 h-full md:h-2/3 flex items-center
+}
+
+.body {
+    @apply p-8 relative bg-white rounded-xl h-full w-full;
+}
+
+.mask {
+    @apply fixed inset-0 z-40 bg-navy/30
+}

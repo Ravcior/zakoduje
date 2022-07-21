@@ -1,0 +1,15 @@
+.wrapper {
+    @apply grid md:grid-cols-2 xl:grid-cols-3 gap-8;
+}
+
+.column {
+    @apply flex flex-col gap-8 first:col-span-full xl:first:col-auto;
+
+    &:first-child > a > div {
+        @apply lg:flex xl:block
+    }
+}
+
+.showMore {
+    @apply flex justify-between mt-10
+}

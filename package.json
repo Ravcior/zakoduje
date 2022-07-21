@@ -1,0 +1,52 @@
+{
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@emailjs/browser": "^3.6.2",
+        "@fortawesome/fontawesome-free": "^6.1.1",
+        "@fortawesome/fontawesome-svg-core": "^6.1.1",
+        "@fortawesome/free-brands-svg-icons": "^6.1.1",
+        "@fortawesome/free-regular-svg-icons": "^6.1.1",
+        "@fortawesome/free-solid-svg-icons": "^6.1.1",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "@giscus/react": "^2.0.6",
+        "algoliasearch": "^4.13.1",
+        "dotenv": "^16.0.1",
+        "gray-matter": "^4.0.3",
+        "markdown-it": "^13.0.1",
+        "next": "12.2.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-fontawesome": "^1.7.1",
+        "react-google-recaptcha": "^3.0.0-alpha.1",
+        "react-instantsearch-dom": "^6.30.1",
+        "react-instantsearch-hooks-web": "^6.30.1",
+        "react-recaptcha": "^2.3.10",
+        "remark": "^14.0.2",
+        "remark-html": "^15.0.1",
+        "sass": "^1.53.0",
+        "ts-node": "^10.9.1"
+    },
+    "devDependencies": {
+        "@types/markdown-it": "^12.2.3",
+        "@types/node": "^18.0.1",
+        "@types/react": "18.0.14",
+        "@types/react-dom": "18.0.6",
+        "@types/react-google-recaptcha": "^2.1.5",
+        "@types/react-instantsearch-dom": "^6.12.3",
+        "@types/react-recaptcha": "^2.3.4",
+        "autoprefixer": "^10.4.7",
+        "eslint": "8.19.0",
+        "eslint-config-next": "12.2.0",
+        "postcss": "^8.4.14",
+        "tailwindcss": "^3.1.4",
+        "typescript": "4.7.4"
+    }
+}

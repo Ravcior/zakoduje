@@ -6,7 +6,7 @@ const PageTitle = () => (
     <div className={styles.wrapper}>
         <Logo />
         <p className={styles.subtitle}>
-            Creative Personal Blog<br></br>PSD template
+            Blog o programowaniu<br></br>i technologiach
         </p>
     </div>
 )

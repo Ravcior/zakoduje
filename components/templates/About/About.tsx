@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 import styles from './About.module.scss'
 
 const About = () => (
@@ -10,28 +11,39 @@ const About = () => (
             <div className={styles.text}>
                 <span className={styles.title}>Cześć, jestem Rafał!</span>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Dolor ducimus, hic, distinctio commodi impedit eveniet
-                    repellat similique cum dignissimos omnis perspiciatis
-                    delectus porro reiciendis vitae quae illum laudantium
-                    repudiandae?
+                    Nazywam się Rafał i jestem programistą. Zajmuje się
+                    tworzeniem aplikacji internetowych (Full-Stack JS, SQL).
+                    Moje projekty możesz obejrzeć w zakładce{' '}
+                    <Link href="/portfolio">
+                        <a>portfolio</a>
+                    </Link>
+                    .
                 </p>
+                <p>
+                    Jeżeli jesteś zainteresowany(-a) współpracą ze mną
+                    skorzystaj z{' '}
+                    <Link href="/contact">
+                        <a>formularza kontaktowego</a>
+                    </Link>{' '}
+                    lub po prostu wyślij maila.
+                </p>
+
                 <p>
                     <b>E-mail: </b>
                     <a href="mailto:rafal@zakoduje.com">rafal@zakoduje.com</a>
                 </p>
                 <span className={styles.subtitle}>Linki</span>
                 <div className={styles.socials}>
-                    <a href="#">
+                    <a href="https://github.com/Ravcior">
                         <FontAwesomeIcon icon={['fab', 'github']} width="16" />
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/rafa%C5%82-rozkowi%C5%84ski-0ab199245/">
                         <FontAwesomeIcon
                             icon={['fab', 'linkedin-in']}
                             width="16"
                         />
                     </a>
-                    <a href="#">
+                    <a href="https://twitter.com/rozkowir">
                         <FontAwesomeIcon icon={['fab', 'twitter']} width="16" />
                     </a>
                 </div>

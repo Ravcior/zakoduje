@@ -5,11 +5,12 @@ const Footer = ({ posts, handleModal }: { posts: any; handleModal: any }) => (
     <div className={styles.wrapper}>
         <div className={styles.widgets}>
             <div className={styles.widget}>
-                <span className={styles.widgetTitle}>About</span>
+                <span className={styles.widgetTitle}>O stronie</span>
                 <p className={styles.about}>
-                    Vertic is a creative and unique design made for bloggers
-                    Lorem Ipsum proin gravida nibh vel velit auctor aliquet
-                    aenean sollicitudin
+                    Zakoduje to blog o programowaniu. Pojawiać będzie się tutaj
+                    content związany głównie z JavaScriptem. Nie zabraknie
+                    jednak tematów dookoła programowania tj. SEO, Freelancing,
+                    Kryptowaluty.
                 </p>
             </div>
             <div className={styles.widget}>

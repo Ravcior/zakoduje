@@ -15,7 +15,7 @@ const Socials = () => (
             >
                 <FontAwesomeIcon icon={['fab', 'linkedin-in']} width="16" />
             </a>
-            <a href="twitter.com/rozkowir" className={styles.item}>
+            <a href="https://twitter.com/rozkowir" className={styles.item}>
                 <FontAwesomeIcon icon={['fab', 'twitter']} width="16" />
             </a>
         </div>

@@ -76,7 +76,7 @@ const Contact = () => {
             <div className={styles.main}>
                 <div className={styles.formSection}>
                     <Content />
-                    <p className={styles.title}>Send us a message</p>
+                    <p className={styles.title}>Wyślij wiadomość</p>
                     <Form
                         handleChange={handleChange}
                         handleSubmit={handleSubmit}
@@ -91,14 +91,10 @@ const Contact = () => {
 
 const Content = () => (
     <div className={styles.content}>
-        <p className={styles.title}>Get in touch</p>
+        <p className={styles.title}>Kontakt</p>
         <p className={styles.text}>
-            Liusmod tempor incididunt ut labore et dolore magna aliquaenim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est{' '}
+            Jeżeli jesteś zainteresowany(-a) współpracą ze mną skorzystaj z
+            formularza poniżej lub po prostu wyślij maila.
         </p>
     </div>
 )
@@ -118,7 +114,7 @@ const Form = ({
                 onChange={handleChange}
                 required
                 name="name"
-                placeholder="Name*"
+                placeholder="Imię*"
             />
             <input
                 onChange={handleChange}
@@ -130,12 +126,12 @@ const Form = ({
             <input
                 onChange={handleChange}
                 name="website"
-                placeholder="Company / Website"
+                placeholder="Firma / Strona www"
             />
             <textarea
                 onChange={handleChange}
                 required
-                placeholder="Message*"
+                placeholder="Wiadomość*"
                 name="message"
             ></textarea>
             <button type="submit">

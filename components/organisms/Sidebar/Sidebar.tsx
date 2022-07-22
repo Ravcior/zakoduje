@@ -107,7 +107,7 @@ const Sidebar = ({ posts, handleModal }: { posts: any; handleModal: any }) => {
                             width="16"
                         />
                     </a>
-                    <a href="twitter.com/rozkowir">
+                    <a href="https://twitter.com/rozkowir">
                         <FontAwesomeIcon icon={['fab', 'twitter']} width="16" />
                     </a>
                 </div>

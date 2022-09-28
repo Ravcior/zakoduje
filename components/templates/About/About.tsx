@@ -6,14 +6,15 @@ const About = () => (
     <div className={styles.wrapper}>
         <div className={styles.content}>
             <div className={styles.thumbnail}>
-                <img src="https://picsum.photos/500/500" />
+                <img src="/public/assets/avatar.jpg" />
             </div>
             <div className={styles.text}>
                 <span className={styles.title}>Cześć, jestem Rafał!</span>
                 <p>
                     Nazywam się Rafał i jestem programistą. Zajmuje się
                     tworzeniem aplikacji internetowych (Full-Stack JS, SQL).
-                    Moje projekty możesz obejrzeć w zakładce{' '}
+                    Największą satysfakcję sprawia mi realizacja własnych
+                    pomysłów. Część moich projektów możesz obejrzeć w zakładce{' '}
                     <Link href="/portfolio">
                         <a>portfolio</a>
                     </Link>
@@ -51,10 +52,10 @@ const About = () => (
         </div>
         <div className={styles.cv}>
             <p className={styles.title}>CV</p>
-            <a href="/public/vercel.svg" download>
+            <a href="/public/assets/rafal_rozkowinski_cv.pdf" download>
                 Pobierz moje CV
             </a>
-            <img src="https://picsum.photos/210/297" />
+            <img src="/public/assets/rafal_rozkowinski_cv.png" />
         </div>
     </div>
 )

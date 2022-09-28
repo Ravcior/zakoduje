@@ -4,7 +4,7 @@ import styles from './Menu.module.scss'
 
 const Menu = () => (
     <ul className={styles.wrapper}>
-        <li>
+        {/* <li>
             <Link href="/">
                 <a>
                     <span className={styles.icon}>
@@ -13,7 +13,7 @@ const Menu = () => (
                     <span className={styles.title}>Home</span>
                 </a>
             </Link>
-        </li>
+        </li> */}
         <li>
             <Link href="/about">
                 <a>
@@ -24,7 +24,7 @@ const Menu = () => (
                 </a>
             </Link>
         </li>
-        <li>
+        {/* <li>
             <Link href="/portfolio">
                 <a>
                     <span className={styles.icon}>
@@ -33,8 +33,8 @@ const Menu = () => (
                     <span className={styles.title}>Portfolio</span>
                 </a>
             </Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
             <Link href="/blog?page=1">
                 <a>
                     <span className={styles.icon}>
@@ -43,7 +43,7 @@ const Menu = () => (
                     <span className={styles.title}>Blog</span>
                 </a>
             </Link>
-        </li>
+        </li> */}
         <li>
             <Link href="/contact">
                 <a>

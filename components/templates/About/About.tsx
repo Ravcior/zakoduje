@@ -14,11 +14,12 @@ const About = () => (
                     Nazywam się Rafał i jestem programistą. Zajmuje się
                     tworzeniem aplikacji internetowych (Full-Stack JS, SQL).
                     Największą satysfakcję sprawia mi realizacja własnych
-                    pomysłów. Część moich projektów możesz obejrzeć w zakładce{' '}
+                    pomysłów. 
+                    {/* Część moich projektów możesz obejrzeć w zakładce{' '}
                     <Link href="/portfolio">
                         <a>portfolio</a>
                     </Link>
-                    .
+                    . */}
                 </p>
                 <p>
                     Jeżeli jesteś zainteresowany(-a) współpracą ze mną

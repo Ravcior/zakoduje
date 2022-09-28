@@ -7,6 +7,8 @@ import Layout from '../../../containers/Layout/Layout'
 import ErrorPage from '../ErrorPage/ErrorPage'
 
 import styles from './Article.module.scss'
+import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 type Author = {
     name: string
@@ -39,8 +41,12 @@ const Article = ({ post, data }: { post: PostType; data: any }) => {
     return (
         <>
             <Head>
-                <title>My page title</title>
-                <meta property="og:title" content="My page title" />
+                <title>{post.title}</title>
+                <meta property="og:title" content={post.title} />
+                <link
+                    rel="canonical"
+                    href={`https://zakoduje.com/blog/${post.slug}`}
+                />
             </Head>
             <Layout data={data}>
                 <div className={styles.wrapper}>
@@ -58,8 +64,10 @@ const Article = ({ post, data }: { post: PostType; data: any }) => {
 }
 
 const Comments = () => {
-    const GISCUS_REPO_ID: string = process.env.GISCUS_REPO_ID as string
-    const GISCUS_CATEGORY_ID: string = process.env.GISCUS_CATEGORY_ID as string
+    const GISCUS_REPO_ID: string = process.env
+        .NEXT_PUBLIC_GISCUS_REPO_ID as string
+    const GISCUS_CATEGORY_ID: string = process.env
+        .NEXT_PUBLIC_GISCUS_CATEGORY_ID as string
 
     return (
         <div className={styles.comments}>
@@ -80,11 +88,56 @@ const Comments = () => {
 
 const Content = ({ post }: { post: any }) => (
     <div className={styles.contentWrapper}>
-        <div className={styles.metadata}></div>
+        <div className={styles.metadata}>
+            <div>
+                <FontAwesomeIcon icon={['fas', 'folder-tree']} width="16" />
+                <span>{post.category}</span>
+            </div>
+            <div>
+                <FontAwesomeIcon icon={['fas', 'calendar-check']} width="16" />
+                <span>{post.date}</span>
+            </div>
+        </div>
         <div
             className={styles.content}
             dangerouslySetInnerHTML={{ __html: post?.content }}
-        ></div>
+        />
+        <div className={styles.socials}>
+            <span>Udostępnij:</span>
+            <div className={styles.socialsBox}>
+                <a
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://grywalnia.pl"
+                    target="_blank"
+                    className={styles.facebook}
+                >
+                    <FontAwesomeIcon icon={['fab', 'facebook']} width="16" />
+                </a>
+                <a
+                    href={`fb-messenger://share/?link=https://grywalnia.pl/`}
+                    target="_blank"
+                    className={styles.messenger}
+                >
+                    <FontAwesomeIcon
+                        icon={['fab', 'facebook-messenger']}
+                        width="16"
+                    />
+                </a>
+                <a
+                    href={`http://twitter.com/share?url=https://grywalnia.pl/&hashtags=Grywalnia`}
+                    target="_blank"
+                    className={styles.twitter}
+                >
+                    <FontAwesomeIcon icon={['fab', 'twitter']} width="16" />
+                </a>
+                <a
+                    href="https://www.linkedin.com/sharing/share-offsite/?url=https://grywalnia.pl"
+                    target="_blank"
+                    className={styles.linkedin}
+                >
+                    <FontAwesomeIcon icon={['fab', 'linkedin-in']} width="16" />
+                </a>
+            </div>
+        </div>
     </div>
 )
 
@@ -96,13 +149,14 @@ const Author = () => (
         <div>
             <p className={styles.authorName}>Rafał Rozkowiński</p>
             <p className={styles.authorText}>
-                Eiusmod tempor incididunt ut labore et dolore magna aliquaenim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
-                natus error sit voluptatem.
+                Nazywam się Rafał i jestem programistą. Zajmuje się tworzeniem
+                aplikacji internetowych (Full-Stack JS, SQL). Największą
+                satysfakcję sprawia mi realizacja własnych pomysłów. Część moich
+                projektów możesz obejrzeć w zakładce{' '}
+                <Link href="/portfolio">
+                    <a>portfolio</a>
+                </Link>
+                .
             </p>
         </div>
     </div>

@@ -6,7 +6,7 @@ const About = () => (
     <div className={styles.wrapper}>
         <div className={styles.content}>
             <div className={styles.thumbnail}>
-                <img src="/public/assets/avatar.jpg" />
+                <img src="/assets/avatar.jpg" />
             </div>
             <div className={styles.text}>
                 <span className={styles.title}>Cześć, jestem Rafał!</span>
@@ -52,10 +52,10 @@ const About = () => (
         </div>
         <div className={styles.cv}>
             <p className={styles.title}>CV</p>
-            <a href="/public/assets/rafal_rozkowinski_cv.pdf" download>
+            <a href="/assets/rafal_rozkowinski_cv.pdf" download>
                 Pobierz moje CV
             </a>
-            <img src="/public/assets/rafal_rozkowinski_cv.png" />
+            <img src="/assets/rafal_rozkowinski_cv.png" />
         </div>
     </div>
 )

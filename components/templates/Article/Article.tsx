@@ -108,6 +108,7 @@ const Content = ({ post }: { post: any }) => (
                 <a
                     href="https://www.facebook.com/sharer/sharer.php?u=https://grywalnia.pl"
                     target="_blank"
+                    rel="noreferrer"
                     className={styles.facebook}
                 >
                     <FontAwesomeIcon icon={['fab', 'facebook']} width="16" />
@@ -115,6 +116,7 @@ const Content = ({ post }: { post: any }) => (
                 <a
                     href={`fb-messenger://share/?link=https://grywalnia.pl/`}
                     target="_blank"
+                    rel="noreferrer"
                     className={styles.messenger}
                 >
                     <FontAwesomeIcon
@@ -125,6 +127,7 @@ const Content = ({ post }: { post: any }) => (
                 <a
                     href={`http://twitter.com/share?url=https://grywalnia.pl/&hashtags=Grywalnia`}
                     target="_blank"
+                    rel="noreferrer"
                     className={styles.twitter}
                 >
                     <FontAwesomeIcon icon={['fab', 'twitter']} width="16" />
@@ -132,6 +135,7 @@ const Content = ({ post }: { post: any }) => (
                 <a
                     href="https://www.linkedin.com/sharing/share-offsite/?url=https://grywalnia.pl"
                     target="_blank"
+                    rel="noreferrer"
                     className={styles.linkedin}
                 >
                     <FontAwesomeIcon icon={['fab', 'linkedin-in']} width="16" />

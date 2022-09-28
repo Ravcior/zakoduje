@@ -68,7 +68,7 @@ const Footer = ({ posts, handleModal }: { posts: any; handleModal: any }) => (
                 </div>
             </div>
             <div className={styles.widget}>
-                <span className={styles.widgetTitle}>Popularne posty</span>
+                <span className={styles.widgetTitle}>Projekty</span>
                 <div className={styles.cardsWrapper}>
                     {posts?.map((item: any, index: number) => (
                         <Card type="2" key={index} content={item} />
@@ -77,7 +77,7 @@ const Footer = ({ posts, handleModal }: { posts: any; handleModal: any }) => (
             </div>
         </div>
         <div className={styles.bottombar}>
-            <span className={styles.copyright}>© 2022 Zakoduje.pl</span>
+            <span className={styles.copyright}>© 2022 Zakoduje.com</span>
             <div className={styles.up}></div>
         </div>
     </div>

@@ -46,6 +46,7 @@ const Sidebar = ({ posts, handleModal }: { posts: any; handleModal: any }) => {
                     <a
                         href="https://www.linkedin.com/in/rafa%C5%82-rozkowi%C5%84ski-0ab199245/"
                         target={'_blank'}
+                        rel="noreferrer"
                     >
                         <FontAwesomeIcon
                             icon={['fab', 'linkedin-in']}

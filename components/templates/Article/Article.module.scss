@@ -1,71 +1,82 @@
 .thumbnail {
     @apply rounded-t-xl overflow-hidden;
-
-    img {
-        @apply w-full
-    }
 }
 
-.contentWrapper, .comments, .author {
-    @apply bg-white rounded-xl p-6 lg:p-16 mb-10 text-navy
+.contentWrapper,
+.comments,
+.author {
+    @apply bg-white rounded-xl p-6 lg:p-16 mb-10 text-navy;
 }
 
 .contentWrapper {
     @apply rounded-t-none font-light;
 
-    h1, h2, h3, h4, h5, h6 {
-        @apply font-bold mb-7
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-bold mb-7;
     }
 
     h1 {
-        @apply text-2xl
+        @apply text-2xl;
     }
 
     h2 {
-        @apply text-xl
+        @apply text-xl;
     }
 
     h3 {
-        @apply text-lg
+        @apply text-lg;
     }
 
-    p, ol, ul, blockquote, pre, hr {
-        @apply mb-7
+    p,
+    ol,
+    ul,
+    blockquote,
+    pre,
+    hr {
+        @apply mb-7;
     }
 
-    ul, ol {
+    ul,
+    ol {
         @apply list-disc;
 
         li {
-            @apply mb-3
+            @apply mb-3;
         }
 
         p {
-            @apply mb-0 
+            @apply mb-0;
         }
 
-        ul, ol {
+        ul,
+        ol {
             @apply pl-5 mt-3 ml-0 mb-0;
         }
     }
 
     ul {
-        @apply list-disc ml-5
+        @apply list-disc ml-5;
     }
 
     ol {
-        @apply list-decimal ml-6
+        @apply list-decimal ml-6;
     }
 
     a {
-        @apply text-primary
+        @apply text-primary;
     }
 
     blockquote {
         @apply pl-6 py-2 border-l-4 border-primary italic font-medium text-lg;
 
-        blockquote, p {
-            @apply mb-0
+        blockquote,
+        p {
+            @apply mb-0;
         }
     }
 
@@ -76,20 +87,22 @@
     }
 
     pre {
-        @apply overflow-scroll rounded-lg p-3 text-xs sm:text-base bg-background;
+        @apply rounded-lg p-3 text-xs sm:text-base bg-background;
+
+        word-break: break-word;
 
         code {
-            @apply rounded-none p-0 bg-transparent
+            @apply rounded-none p-0 bg-transparent;
         }
     }
 }
 
 .comments {
-    @apply mb-0 text-center
+    @apply mb-0 text-center;
 }
 
 .author {
-    @apply flex items-center text-center gap-8 flex-col xl:text-left xl:flex-row
+    @apply flex items-center text-center gap-8 flex-col xl:text-left xl:flex-row;
 }
 
 .authorAvatar {
@@ -97,44 +110,45 @@
 }
 
 .authorName {
-    @apply mb-2 text-xl
+    @apply mb-2 text-xl;
 }
 
 .authorText {
-    @apply font-light
+    @apply font-light;
 }
 
 @media (min-width: 2048px) {
-    .contentWrapper, .author {
+    .contentWrapper,
+    .author {
         @apply float-left;
 
         width: calc(50% - 16px);
     }
 
-    .thumbnail, .comments {
+    .thumbnail,
+    .comments {
         @apply float-right;
 
         width: calc(50% - 16px);
-
     }
 
     .author {
-        @apply mb-8
+        @apply mb-8;
     }
 
     .comments {
-        @apply sticky top-8
+        @apply sticky top-8;
     }
 
     .thumbnail {
-        @apply rounded-b-xl mb-8
+        @apply rounded-b-xl mb-8;
     }
 
     .contentWrapper {
-        @apply rounded-t-xl mr-8
+        @apply rounded-t-xl mr-8;
     }
 
     .clear {
-        @apply clear-both
+        @apply clear-both;
     }
 }

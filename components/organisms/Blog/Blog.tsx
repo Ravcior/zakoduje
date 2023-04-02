@@ -57,17 +57,13 @@ const Pagination = ({
 
 const PrevButton = ({ page }: { page: string }) => (
     <Link href={page === '1' ? '/' : `blog?page=${parseInt(page) - 1}`}>
-        <a>
-            <Button>Poprzednia strona</Button>
-        </a>
+        <Button>Poprzednia strona</Button>
     </Link>
 )
 
 const NextButton = ({ page }: { page: string }) => (
     <Link href={`blog?page=${parseInt(page) + 1}`}>
-        <a>
-            <Button>Następna strona</Button>
-        </a>
+        <Button>Następna strona</Button>
     </Link>
 )
 

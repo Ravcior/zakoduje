@@ -21,49 +21,7 @@ const Footer = ({ posts, handleModal }: { posts: any; handleModal: any }) => (
                             handleModal({ defTag: '1' })
                         }}
                     >
-                        React.js
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Next.js
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Gatsby.js
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Sass
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Tailwind
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Design
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Typography
+                        CSS
                     </div>
                 </div>
             </div>

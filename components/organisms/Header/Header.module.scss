@@ -1,13 +1,12 @@
 .wrapper {
-    @apply 
-    z-20
-    sticky
+    @apply z-20
+    fixed
     top-0
     w-full
     h-[50px]
     bg-primary 
     text-white 
-    overflow-scroll
+    overflow-auto
     px-4
 
     flex
@@ -15,24 +14,23 @@
     items-center
     
     sm:block
-    sm:w-[50px] 
+    sm:w-14 
     sm:pb-4 
     sm:px-0
 
     
-    md:w-[300px] 
+    md:w-72 
     sm:h-screen
     
-    lg:w-[400px];
+    lg:w-96;
 }
 
 .widgets {
-    @apply md:px-10 
+    @apply md:px-10;
 }
 
-.input{
-    @apply 
-    hidden 
+.input {
+    @apply hidden 
     cursor-pointer
     w-full 
     bg-transparent 
@@ -53,8 +51,7 @@
 }
 
 .icon {
-    @apply 
-    flex 
+    @apply flex 
     items-center 
     justify-center 
     border 
@@ -68,12 +65,11 @@
 
     sm:ml-auto
     sm:mx-auto 
-    md:hidden
+    md:hidden;
 }
 
 .mobileTogler {
-    @apply 
-    flex 
+    @apply flex 
     items-center 
     justify-center 
     border 
@@ -83,13 +79,13 @@
     h-10 
     cursor-pointer
 
-    sm:hidden 
+    sm:hidden;
 }
 
 .mobileMenu {
-    @apply fixed top-[50px] left-0 right-0 bottom-0 bg-primary
+    @apply fixed top-[50px] left-0 right-0 bottom-0 bg-primary;
 }
 
 .none {
-    @apply hidden sm:block
+    @apply hidden sm:block;
 }

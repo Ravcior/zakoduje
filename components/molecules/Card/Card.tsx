@@ -16,41 +16,35 @@ const Card = ({ content, type = '1' }: { content: any; type: string }) => {
 }
 
 const MdCard = ({ content }: { content: any }) => (
-    <Link href={`blog/${content.slug}`}>
-        <a className={styles.wrapper}>
-            <div className={styles.image}>
-                <img src={content.thumbnail} />
-            </div>
-            <div className={styles.title}>
-                <h4>{content.title}</h4>
-            </div>
-        </a>
+    <Link href={`blog/${content.slug}`} className={styles.wrapper}>
+        <div className={styles.image}>
+            <img src={content.thumbnail} />
+        </div>
+        <div className={styles.title}>
+            <h4>{content.title}</h4>
+        </div>
     </Link>
 )
 
 const SmCard = ({ item }: { item: any }) => (
-    <Link href={`/blog/${item.slug}`}>
-        <a className={styles.card}>
-            <div className={styles.cardThumbnail}>
-                <img src="https://picsum.photos/100/70" />
-            </div>
-            <h4>{item.title}</h4>
-        </a>
+    <Link href={`/blog/${item.slug}`} className={styles.card}>
+        <div className={styles.cardThumbnail}>
+            <img src="https://picsum.photos/100/70" />
+        </div>
+        <h4>{item.title}</h4>
     </Link>
 )
 
 const RoundedSmCard = ({ item }: { item: any }) => {
     return (
-        <Link href={`/blog/${item.slug}`}>
-            <a className={styles.roundedCard}>
-                <div className={styles.image}>
-                    <img src="https://picsum.photos/200/300" />
-                </div>
-                <div className={styles.content}>
-                    <h5 className={styles.cardTitle}>{item.title}</h5>
-                    <div className={styles.date}>{item.date}</div>
-                </div>
-            </a>
+        <Link href={`/blog/${item.slug}`} className={styles.roundedCard}>
+            <div className={styles.image}>
+                <img src="https://picsum.photos/200/300" />
+            </div>
+            <div className={styles.content}>
+                <h5 className={styles.cardTitle}>{item.title}</h5>
+                <div className={styles.date}>{item.date}</div>
+            </div>
         </Link>
     )
 }

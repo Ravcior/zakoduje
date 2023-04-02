@@ -24,16 +24,12 @@ const Layout = ({ children, data }: { children: JSX.Element; data: any }) => {
         setDefaultRefinement(() => ({ ...refinements }))
     }
 
-    const handleSearchShorthand = ({
-        key,
-        metaKey,
-        ctrlKey,
-    }: {
-        key: any
-        metaKey: any
-        ctrlKey: any
-    }) => {
-        if ((metaKey || ctrlKey) && key === 'k') handleSearchModal()
+    const handleSearchShorthand = (event: KeyboardEvent) => {
+        const { metaKey, ctrlKey, key } = event
+        if ((metaKey || ctrlKey) && key === 'k') {
+            event.preventDefault()
+            handleSearchModal()
+        }
     }
 
     if (typeof window !== 'undefined') {
@@ -42,19 +38,17 @@ const Layout = ({ children, data }: { children: JSX.Element; data: any }) => {
 
     return (
         <>
-            <div className={styles.pageWrapper}>
-                <Header handleModal={handleSearchModal} />
-                <div className={styles.contentWrapper}>
-                    <main className={styles.main}>{children}</main>
-                    <Sidebar
-                        handleModal={handleSearchModal}
-                        posts={data.slice(0, 3)}
-                    />
-                    <Footer
-                        handleModal={handleSearchModal}
-                        posts={data.slice(3, 5)}
-                    />
-                </div>
+            <Header handleModal={handleSearchModal} />
+            <div className={styles.contentWrapper}>
+                <main className={styles.main}>{children}</main>
+                <Sidebar
+                    handleModal={handleSearchModal}
+                    posts={data.slice(0, 3)}
+                />
+                <Footer
+                    handleModal={handleSearchModal}
+                    posts={data.slice(3, 5)}
+                />
             </div>
             {isVisible && (
                 <Modal closeModal={handleSearchModal}>

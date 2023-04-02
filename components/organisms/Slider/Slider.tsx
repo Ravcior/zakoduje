@@ -6,15 +6,13 @@ const Slider = ({ article }: { article: any }) => {
     content ??= {}
 
     return (
-        <Link href={`blog/${content.slug}`}>
-            <a className={styles.wrapper}>
-                <img src={content.thumbnail} />
-                <div className={styles.content}>
-                    <div className={styles.tag}>{content.category}</div>
-                    <h2 className={styles.title}>{content.title}</h2>
-                </div>
-                <div className={styles.mask}></div>
-            </a>
+        <Link href={`blog/${content.slug}`} className={styles.wrapper}>
+            <img src={content.thumbnail} />
+            <div className={styles.content}>
+                <div className={styles.tag}>{content.category}</div>
+                <h2 className={styles.title}>{content.title}</h2>
+            </div>
+            <div className={styles.mask}></div>
         </Link>
     )
 }

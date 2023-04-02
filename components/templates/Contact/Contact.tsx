@@ -160,11 +160,11 @@ const Panels = () => (
             title="LinkedIn"
             icon={['fab', 'linkedin-in']}
         />
-        <Panel
+        {/* <Panel
             link="https://github.com/Ravcior"
             title="Github"
             icon={['fab', 'github']}
-        />
+        /> */}
     </div>
 )
 

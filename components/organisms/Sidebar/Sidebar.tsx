@@ -15,29 +15,13 @@ const Sidebar = ({ posts, handleModal }: { posts: any; handleModal: any }) => {
             <div className={styles.widget}>
                 <span className={styles.title}>Kategorie</span>
                 <ul className={styles.categories}>
-                    <li onClick={() => handleModal({ defCategory: 'dupa' })}>
+                    <li
+                        onClick={() =>
+                            handleModal({ defCategory: 'Web design' })
+                        }
+                    >
                         <div className={styles.bullet} />
-                        <span>Programowanie</span>
-                    </li>
-                    <li onClick={() => handleModal({ defCategory: 'cat' })}>
-                        <div className={styles.bullet} />
-                        <span>Krypto</span>
-                    </li>
-                    <li onClick={() => handleModal({ defCategory: 'cat' })}>
-                        <div className={styles.bullet} />
-                        <span>Marketing</span>
-                    </li>
-                    <li onClick={() => handleModal({ defCategory: 'cat' })}>
-                        <div className={styles.bullet} />
-                        <span>SEO</span>
-                    </li>
-                    <li onClick={() => handleModal({ defCategory: 'cat' })}>
-                        <div className={styles.bullet} />
-                        <span>Lifestyle</span>
-                    </li>
-                    <li onClick={() => handleModal({ defCategory: 'cat' })}>
-                        <div className={styles.bullet} />
-                        <span>Rozwój</span>
+                        <span>Web design</span>
                     </li>
                 </ul>
             </div>
@@ -46,68 +30,29 @@ const Sidebar = ({ posts, handleModal }: { posts: any; handleModal: any }) => {
                 <div className={styles.tags}>
                     <div
                         onClick={() => {
-                            handleModal({ defTag: '1' })
+                            handleModal({ defTag: 'CSS' })
                         }}
                     >
-                        React.js
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Next.js
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Gatsby.js
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Sass
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Tailwind
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Design
-                    </div>
-                    <div
-                        onClick={() => {
-                            handleModal({ defTag: '1' })
-                        }}
-                    >
-                        Typography
+                        CSS
                     </div>
                 </div>
             </div>
             <div className={styles.widget}>
                 <span className={styles.title}>Socials</span>
                 <div className={styles.socials}>
-                    <a href="https://github.com/Ravcior">
+                    {/* <a href="https://github.com/Ravcior" target={'_blank'}>
                         <FontAwesomeIcon icon={['fab', 'github']} width="16" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/rafa%C5%82-rozkowi%C5%84ski-0ab199245/">
+                    </a> */}
+                    <a
+                        href="https://www.linkedin.com/in/rafa%C5%82-rozkowi%C5%84ski-0ab199245/"
+                        target={'_blank'}
+                    >
                         <FontAwesomeIcon
                             icon={['fab', 'linkedin-in']}
                             width="16"
                         />
                     </a>
-                    <a href="https://twitter.com/rozkowir">
+                    <a href="https://twitter.com/rozkowir" target={'_blank'}>
                         <FontAwesomeIcon icon={['fab', 'twitter']} width="16" />
                     </a>
                 </div>

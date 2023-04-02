@@ -8,7 +8,10 @@ const useEventListener = (eventName, handler, element) => {
     }, [handler])
 
     useEffect(() => {
-        const eventListener = (event) => savedHandler.current(event)
+        const eventListener = (event) => {
+            savedHandler.current(event)
+        }
+
         element?.addEventListener(eventName, eventListener)
 
         return () => {

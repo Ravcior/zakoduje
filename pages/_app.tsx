@@ -37,9 +37,17 @@ library.add(
 )
 
 import '../styles/globals.scss'
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }: AppProps) {
-    return <Component {...pageProps} />
+    return (
+        <>
+            <Head>
+                <title>Zakoduje.com - programming passion</title>
+            </Head>
+            <Component {...pageProps} />
+        </>
+    )
 }
 
 export default MyApp

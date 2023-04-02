@@ -1,15 +1,14 @@
 .wrapper {
-    @apply text-center sm:m-auto sm:py-4 md:py-16;
+    @apply block text-center sm:m-auto sm:py-4 md:py-16;
 
     writing-mode: initial;
-    
+
     @media (min-width: 640px) {
         writing-mode: tb;
     }
 
-    @media (min-width: 768px) { 
+    @media (min-width: 768px) {
         writing-mode: initial;
-
     }
 }
 

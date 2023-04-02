@@ -3,47 +3,49 @@
 }
 
 .list {
-    @apply overflow-scroll h-full pr-4;
+    @apply overflow-y-scroll h-full pr-4;
 
     & > * {
         @apply mb-4 hover:bg-primary hover:text-white rounded-lg pr-2;
     }
 
     .selected {
-        @apply bg-primary text-white
+        @apply bg-primary text-white;
     }
 }
 
 .preview {
-    @apply overflow-scroll hidden md:block;
+    @apply overflow-y-scroll hidden md:block;
 
     img {
-        @apply rounded-xl mb-2
+        @apply rounded-xl mb-2;
     }
 
     h4 {
-        @apply font-bold mb-2
+        @apply font-bold mb-2;
     }
 
     p {
-        @apply mb-2 text-sm
+        @apply mb-2 text-sm;
     }
 }
 
-.imgPlaceholder, .titlePlaceholder, .contentPlaceholder {
+.imgPlaceholder,
+.titlePlaceholder,
+.contentPlaceholder {
     @apply w-full rounded-xl bg-navy/5 mb-2;
 }
 
 .imgPlaceholder {
-    height: 250px
+    height: 250px;
 }
 
 .titlePlaceholder {
-    height: 48px
+    height: 48px;
 }
 
 .contentPlaceholder {
-    height: 128px
+    height: 128px;
 }
 
 .showMore {

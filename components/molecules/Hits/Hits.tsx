@@ -32,14 +32,12 @@ function Hits({ _, searchResults }: { _: any; searchResults: any }) {
 
     return (
         <div className={styles.wrapper}>
-            <>
-                <List
-                    searchResults={searchResults}
-                    handlePreview={handlePreview}
-                    previewIndex={previewIndex}
-                />
-                <Preview content={preview} />
-            </>
+            <List
+                searchResults={searchResults}
+                handlePreview={handlePreview}
+                previewIndex={previewIndex}
+            />
+            <Preview content={preview} />
         </div>
     )
 }
@@ -51,14 +49,17 @@ const Preview = ({ content }: { content: any }) => (
                 <img src="https://picsum.photos/1280/720" />
                 <h4>{content.title}</h4>
                 <p>{content.excerpt}</p>
-                <Link href={`/blog/${content.slug}`}>
-                    <a className={styles.showMore}>
+                <Link
+                    href={`/blog/${content.slug}`}
+                    className={styles.showMore}
+                >
+                    <>
                         Przejdź do artykułu
                         <FontAwesomeIcon
                             icon={['fas', 'arrow-right']}
                             width="10"
                         />
-                    </a>
+                    </>
                 </Link>
             </>
         )}

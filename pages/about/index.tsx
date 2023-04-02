@@ -9,6 +9,10 @@ const AboutPage = ({ important }: { important: any }) => (
 )
 
 export const getStaticProps = async () => {
+    return {
+        notFound: true,
+    }
+
     const articles = getAllPosts([
         'title',
         'slug',

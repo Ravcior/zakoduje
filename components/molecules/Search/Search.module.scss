@@ -6,12 +6,12 @@
     @apply grid grid-cols-2 sm:flex gap-4;
 
     & > * {
-        @apply first:col-span-full
+        @apply first:col-span-full;
     }
 }
 
 .optionWrapper {
-    @apply relative
+    @apply relative;
 }
 
 .optionList {
@@ -21,7 +21,7 @@
         @apply break-all px-2 py-1 hover:bg-navy/5 cursor-pointer;
 
         &.selected {
-            @apply bg-primary text-white
+            @apply bg-primary text-white;
         }
     }
 }
@@ -30,35 +30,34 @@
     @apply p-2 pr-5 text-ellipsis cursor-pointer border border-navy/20 rounded-lg overflow-hidden whitespace-nowrap w-full sm:w-40 shrink-0 relative;
 
     .icon {
-        @apply top-0 right-0
+        @apply top-0 right-0;
     }
-
 }
 
 .expandedCurrentOption {
     @apply p-2 pr-5 text-ellipsis cursor-pointer border rounded-lg rounded-b-none border-b-transparent border-navy/20 overflow-hidden whitespace-nowrap w-full sm:w-40 shrink-0;
 
     .icon {
-        @apply top-px right-px
+        @apply top-px right-px;
     }
 }
 
 .icon {
-    @apply absolute w-8 h-10 top-0 right-0 flex justify-center items-center
+    @apply absolute w-8 h-10 top-0 right-0 flex justify-center items-center;
 }
 
 .closeModal {
-    @apply hidden sm:flex rounded-lg border border-navy/20 w-10 shrink-0 flex items-center justify-center cursor-pointer
+    @apply hidden sm:flex rounded-lg border border-navy/20 w-10 shrink-0 items-center justify-center cursor-pointer;
 }
 
 .closeModalMobile {
-    @apply sm:hidden mt-4 rounded-lg border border-navy/20 p-2 text-center cursor-pointer
+    @apply sm:hidden mt-4 rounded-lg border border-navy/20 p-2 text-center cursor-pointer;
 }
 
 .poweredBy {
     @apply absolute right-8 bottom-4;
 
     & > div {
-        @apply flex items-center gap-1
+        @apply flex items-center gap-1;
     }
 }

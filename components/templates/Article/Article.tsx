@@ -54,7 +54,7 @@ const Article = ({ post, data }: { post: PostType; data: any }) => {
                         <img src="https://picsum.photos/1280/720" />
                     </div>
                     <Content post={post} />
-                    <Author />
+                    {/* <Author /> */}
                     <Comments />
                     <div className={styles.clear} />
                 </div>
@@ -157,10 +157,7 @@ const Author = () => (
                 aplikacji internetowych (Full-Stack JS, SQL). Największą
                 satysfakcję sprawia mi realizacja własnych pomysłów. Część moich
                 projektów możesz obejrzeć w zakładce{' '}
-                <Link href="/portfolio">
-                    <a>portfolio</a>
-                </Link>
-                .
+                <Link href="/portfolio">portfolio</Link>.
             </p>
         </div>
     </div>

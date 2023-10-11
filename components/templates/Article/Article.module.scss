@@ -1,5 +1,9 @@
 .thumbnail {
-    @apply rounded-t-xl overflow-hidden;
+    @apply rounded-t-xl overflow-hidden w-full;
+
+    img {
+        @apply w-full;
+    }
 }
 
 .contentWrapper,

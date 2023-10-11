@@ -19,7 +19,7 @@ type PostType = {
     slug: string
     title: string
     date: string
-    coverImage: string
+    thumbnail: string
     author: Author
     excerpt: string
     ogImage: {
@@ -51,7 +51,7 @@ const Article = ({ post, data }: { post: PostType; data: any }) => {
             <Layout data={data}>
                 <div className={styles.wrapper}>
                     <div className={styles.thumbnail}>
-                        <img src="https://picsum.photos/1280/720" />
+                        <img src={post.thumbnail} />
                     </div>
                     <Content post={post} />
                     {/* <Author /> */}

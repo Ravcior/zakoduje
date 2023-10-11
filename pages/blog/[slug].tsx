@@ -12,7 +12,7 @@ type PostType = {
     slug: string
     title: string
     date: string
-    coverImage: string
+    thumbnail: string
     author: Author
     excerpt: string
     ogImage: {
@@ -44,8 +44,9 @@ export async function getStaticProps({ params }: Params) {
         'slug',
         'author',
         'content',
+        'category',
         'ogImage',
-        'coverImage',
+        'thumbnail',
     ])
     const content = await mdToHtml(post.content || '')
 
@@ -54,7 +55,6 @@ export async function getStaticProps({ params }: Params) {
         'slug',
         'thumbnail',
         'category',
-        'important',
         'date',
     ])
 
